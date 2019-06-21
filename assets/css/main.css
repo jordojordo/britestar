@@ -207,7 +207,6 @@ a {
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   color: #37c0fb;
   text-decoration: none;
-  border-bottom: dotted 1px;
 }
 
 a:hover {
@@ -2649,6 +2648,10 @@ button.small,
 .box.post .image {
   width: 30%;
   margin: 0;
+}
+
+.post2 {
+  padding: 1em;
 }
 
 /* Header */
