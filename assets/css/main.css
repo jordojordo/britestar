@@ -2654,6 +2654,37 @@ button.small,
   padding: 1em;
 }
 
+/* Circle */
+
+.circle {
+  margin: 0;
+}
+
+.circle img {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* About */
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  width: 60%;
+  margin: 20px;
+}
+
 /* Header */
 
 #logo {
@@ -3455,6 +3486,16 @@ button.small,
 
   .wrapper {
     padding: 2em 0 1px 0;
+  }
+
+  /* About */
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-content {
+    width: auto;
   }
 
 }
