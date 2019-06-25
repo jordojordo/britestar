@@ -355,6 +355,47 @@ blockquote {
 
 }
 
+/* Email Form */
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.email-form {
+  width: 80%;
+  transition: .4s ease;
+}
+
+.email-input, .message-input, .submit-button {
+  font-size: calc(5px + 2vmin);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px #e0e0e0;
+}
+
+.submit-button {
+  margin-bottom: 0;
+  padding: 5px;
+  width: 100px;
+  background-color: #6886AB;
+  color: #fff;
+  transition: .4s ease;
+}
+
+.submit-button:hover {
+  background-color: #97C2F7;
+}
+
+.email-success {
+  font-size: calc(5px + 2vmin);
+  margin-bottom: 20px;
+}
+
 /* Row */
 
 .row {
@@ -362,6 +403,10 @@ blockquote {
   flex-wrap: wrap;
   box-sizing: border-box;
   align-items: stretch;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .row>* {

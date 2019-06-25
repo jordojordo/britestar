@@ -30,7 +30,7 @@
 				<!-- Nav -->
 				<nav id="nav">
 					<ul class="nav-container">
-						<li class="current">
+						<li>
 							<a href="#">Services</a>
 							<ul>
 								<li><a href="printing.html">Printing</a></li>
@@ -44,142 +44,26 @@
 						<li><a href="clients.html">Clients</a></li>
 						<li><a href="directory.html">Directory</a></li>
 						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class="current"><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
-
-			<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>
-						Promotional:
-						<em>Lorem ipsum dolor sit amet</em>
-					</h2>
-					<a href="#" class="button">Learn More</a>
-				</header>
-			</section>
-
-			<!-- Highlights -->
-			<section class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<section class="col-4 col-12-narrower">
-							<div class="box highlight">
-								<img class="highlight-img image" src="./media/dd.jpg" alt="" />
-								<h3>Mailing / Printing</h3>
-								<p>
-									Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
-									dapibus nisl amet mattis, sed a rutrum accumsan sed.
-									Suspendisse eu.
-								</p>
-							</div>
-						</section>
-						<section class="col-4 col-12-narrower">
-							<div class="box highlight">
-								<img class="highlight-img image" src="./media/ee.jpg" alt="" />
-								<h3>Promotional Products</h3>
-								<p>
-									Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
-									dapibus nisl amet mattis, sed a rutrum accumsan sed.
-									Suspendisse eu.
-								</p>
-							</div>
-						</section>
-						<section class="col-4 col-12-narrower">
-							<div class="box highlight">
-								<img class="highlight-img image" src="./media/ff.jpg" alt="" />
-								<h3>Screen Printing & Embroidery</h3>
-								<p>
-									Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
-									dapibus nisl amet mattis, sed a rutrum accumsan sed.
-									Suspendisse eu.
-								</p>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
 
 			<!-- Gigantic Heading -->
 			<section class="wrapper style2">
 				<div class="container">
 					<header class="major">
-						<h2>A gigantic heading you can use for whatever</h2>
-						<p>With a much smaller subtitle hanging out just below it</p>
+						<h2>Contact Us</h2>
 					</header>
 				</div>
 			</section>
 
-			<!-- Posts -->
+			<!-- Email Form -->
 			<section class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"
-									><img src="images/pic01.jpg" alt=""
-								/></a>
-								<div class="inner">
-									<h3>The First Thing</h3>
-									<p>
-										Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
-										dapibus nisl amet mattis, sed a rutrum accumsan sed.
-										Suspendisse eu.
-									</p>
-								</div>
-							</div>
-						</section>
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"
-									><img src="images/pic02.jpg" alt=""
-								/></a>
-								<div class="inner">
-									<h3>The Second Thing</h3>
-									<p>
-										Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
-										dapibus nisl amet mattis, sed a rutrum accumsan sed.
-										Suspendisse eu.
-									</p>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="row">
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"
-									><img src="images/pic03.jpg" alt=""
-								/></a>
-								<div class="inner">
-									<h3>The Third Thing</h3>
-									<p>
-										Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
-										dapibus nisl amet mattis, sed a rutrum accumsan sed.
-										Suspendisse eu.
-									</p>
-								</div>
-							</div>
-						</section>
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"
-									><img src="images/pic04.jpg" alt=""
-								/></a>
-								<div class="inner">
-									<h3>The Fourth Thing</h3>
-									<p>
-										Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
-										dapibus nisl amet mattis, sed a rutrum accumsan sed.
-										Suspendisse eu.
-									</p>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
+				<div class="container"></div>
 			</section>
+
+			<div id="email_form"></div>
 
 			<!-- CTA -->
 			<section id="cta" class="wrapper style3">
@@ -307,5 +191,18 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+
+		<!-- Load React. -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script
+			src="https://unpkg.com/react@16/umd/react.development.js"
+			crossorigin
+		></script>
+		<script
+			src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+			crossorigin
+		></script>
+		<!-- Load React component. -->
+		<script src="email_form_bundle.js"></script>
 	</body>
 </html>
