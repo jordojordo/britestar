@@ -3048,6 +3048,16 @@ button.small,
   font-size: 0.9em;
 }
 
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.footer-logo {
+  width: 75%;
+}
+
 /* Wide */
 
 @media screen and (max-width: 1680px) {
