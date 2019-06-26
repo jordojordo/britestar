@@ -355,6 +355,18 @@ blockquote {
 
 }
 
+/* Contact */
+
+.contact-box {
+  padding: 0 2em;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Email Form */
 
 .email-container {
@@ -363,12 +375,18 @@ blockquote {
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
+  padding-right: 1em;
+}
+
+.email-box {
+  padding: 1em;
 }
 
 .email-form {
-  width: 80%;
+  width: 100%;
   transition: .4s ease;
 }
+
 
 .email-input, .message-input, .submit-button {
   font-size: calc(5px + 2vmin);
@@ -3549,6 +3567,12 @@ button.small,
 
 @media screen and (max-width: 480px) {
 
+  /* Contact */
+  
+  .contact-box {
+    padding: 0 1em;
+  }
+
   /* Icon */
 
   .icon.major {
@@ -3616,4 +3640,18 @@ button.small,
     text-align: left;
   }
 
+}
+
+/* Mobile Extra Small */
+
+@media screen and (max-width: 360px) {
+  /* Contact */
+
+  .contact-box {
+    padding: 0;
+  }
+
+  .email-box {
+    padding: 0;
+  }
 }

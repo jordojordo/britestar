@@ -146,70 +146,28 @@
 				<div class="container">
 					<div class="row">
 						<section class="col-3 col-6-narrower col-12-mobilep">
-							<h3>Links to Stuff</h3>
+							<h3>Services</h3>
 							<ul class="links">
-								<li><a href="#">Mattis et quis rutrum</a></li>
-								<li><a href="#">Suspendisse amet varius</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum accumsan dolor</a></li>
-								<li><a href="#">Mattis rutrum accumsan</a></li>
-								<li><a href="#">Suspendisse varius nibh</a></li>
-								<li><a href="#">Sed et dapibus mattis</a></li>
+								<li><a href="#">Printing</a></li>
+								<li><a href="#">Promotional Products</a></li>
+								<li><a href="#">Mailing</a></li>
+								<li><a href="#">Screen Printing</a></li>
+								<li><a href="#">Bindery</a></li>
 							</ul>
 						</section>
 						<section class="col-3 col-6-narrower col-12-mobilep">
-							<h3>More Links to Stuff</h3>
+							<h3>Additional Links</h3>
 							<ul class="links">
-								<li><a href="#">Duis neque nisi dapibus</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum accumsan sed</a></li>
-								<li><a href="#">Mattis et sed accumsan</a></li>
-								<li><a href="#">Duis neque nisi sed</a></li>
-								<li><a href="#">Sed et dapibus quis</a></li>
-								<li><a href="#">Rutrum amet varius</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Clients</a></li>
+								<li><a href="#">Directory</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Contact</a></li>
 							</ul>
 						</section>
-						<section class="col-6 col-12-narrower">
+						<section class="col-6 col-12-narrower email-box">
 							<h3>Get In Touch</h3>
-							<form>
-								<div class="row gtr-50">
-									<div class="col-6 col-12-mobilep">
-										<input
-											type="text"
-											name="name"
-											id="name"
-											placeholder="Name"
-										/>
-									</div>
-									<div class="col-6 col-12-mobilep">
-										<input
-											type="email"
-											name="email"
-											id="email"
-											placeholder="Email"
-										/>
-									</div>
-									<div class="col-12">
-										<textarea
-											name="message"
-											id="message"
-											placeholder="Message"
-											rows="5"
-										></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li>
-												<input
-													type="submit"
-													class="button alt"
-													value="Send Message"
-												/>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</form>
+							<div id="email_form" class="email-footer"></div>
 						</section>
 					</div>
 				</div>
@@ -241,9 +199,9 @@
 				<!-- Copyright -->
 				<div class="copyright">
 					<ul class="menu">
-						<li>&copy; BriteStar Business. All rights reserved</li>
+						<li>&copy; 2019 <a href="index.html">BriteStar Business</a></li>
 						<li>
-							Design: <a href="https://endernet.design">Endernet Design</a>
+							Built: <a href="https://endernet.design">Endernet Design</a>
 						</li>
 					</ul>
 				</div>
@@ -257,5 +215,17 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<!-- Load React. -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script
+			src="https://unpkg.com/react@16/umd/react.development.js"
+			crossorigin
+		></script>
+		<script
+			src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+			crossorigin
+		></script>
+		<!-- Load React component. -->
+		<script src="email_form_bundle.js"></script>
 	</body>
 </html>
