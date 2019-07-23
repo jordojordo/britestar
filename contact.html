@@ -8,6 +8,17 @@
 			content="width=device-width, initial-scale=1, user-scalable=no"
 		/>
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- FilePond stylesheet -->
+		<link
+			href="https://unpkg.com/filepond/dist/filepond.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://transloadit.edgly.net/releases/uppy/v1.0.0/uppy.min.css"
+			rel="stylesheet"
+		/>
+		<!-- 		<link href="node_modules/uppy/dist/uppy.min.css" rel="stylesheet" />
+ -->
 	</head>
 
 	<body class="is-preload">
@@ -82,18 +93,11 @@
 						</section>
 						<section class="col-6 col-12-narrower email-box">
 							<div id="email_form"></div>
+							<p>Need to send us a file?</p>
+							<button id="uppy-open-modal">Select Files</button>
+							<div class="DashboardContainer"></div>
 						</section>
 					</div>
-				</div>
-			</section>
-
-			<!-- CTA -->
-			<section id="cta" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Are you interested in working with us?</h2>
-						<a href="#" class="button">Request an Estimate</a>
-					</header>
 				</div>
 			</section>
 
@@ -188,7 +192,12 @@
 			src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
 			crossorigin
 		></script>
+
 		<!-- Load React component. -->
 		<script src="email_form_bundle.js"></script>
+		<script src="upload_bundle.js"></script>
+		<script src="https://transloadit.edgly.net/releases/uppy/v1.0.0/uppy.min.js"></script>
+		<!-- 		<script src="node_modules/uppy/dist/uppy.min.js"></script>
+ -->
 	</body>
 </html>
