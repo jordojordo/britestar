@@ -414,6 +414,19 @@ blockquote {
   margin-bottom: 20px;
 }
 
+.upload-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-button {
+  margin: 0 2em;
+  padding: 1em;
+}
+
+
+
 /* Map */
 /* Set the size of the div element that contains the map */ 
 #map { 
@@ -3612,6 +3625,10 @@ button.small,
   .button {
     width: 100%;
     display: block;
+  }
+
+  .upload-button {
+    width: 0;
   }
 
   /* Box */
