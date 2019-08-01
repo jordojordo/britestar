@@ -205,7 +205,7 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  color: #37c0fb;
+  color: #264d70;
   text-decoration: none;
 }
 
@@ -400,13 +400,13 @@ blockquote {
   margin-bottom: 0;
   padding: 5px;
   width: 100px;
-  background-color: #6886AB;
+  background-color: #4284C2;
   color: #fff;
   transition: .4s ease;
 }
 
 .submit-button:hover {
-  background-color: #97C2F7;
+  background-color: #56AFFC;
 }
 
 .email-success {
@@ -2288,6 +2288,10 @@ label {
   width: 100%;
 }
 
+.image.left img:hover {
+  opacity: .8;
+}
+
 .image.fit {
   display: block;
 }
@@ -2616,7 +2620,7 @@ button,
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/bg01.png");
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/bg01.png");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/bg01.png");
-  background-color: #37c0fb;
+  background-color: #4284C2;
   border-radius: 5px;
   border: 0;
   color: #fff;
@@ -2636,7 +2640,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: #50c8fc;
+  background-color: #56AFFC;
   color: #fff !important;
 }
 
@@ -2702,6 +2706,10 @@ button.small,
 
 .highlight-img {
 	max-width: 75%;
+}
+
+.highlight-img:hover {
+  opacity: .8;
 }
 
 .box.highlight {
@@ -2778,10 +2786,15 @@ button.small,
 	padding: 0 20px;
 }
 
+#logo img:hover {
+  opacity: .8;
+}
+
 #logo-contact-info {
 	display: grid;
 	justify-items: end;
 }
+
 
 #header {
   text-align: center;
@@ -2841,6 +2854,7 @@ button.small,
   border: 0;
   display: block;
   padding: 0.5em;
+  transition: .2s ease;
 }
 
 #nav>ul>li:first-child {
@@ -2849,6 +2863,7 @@ button.small,
 
 #nav>ul>li:hover a {
   color: #fff;
+  background-color: #56AFFC;
 }
 
 #nav>ul>li.current {
@@ -2914,11 +2929,14 @@ button.small,
   color: #c0c0c0;
   text-decoration: none;
   border: 0;
+  padding: 0 .8em;
 }
 
 .dropotron>li.active>a,
 .dropotron>li:hover>a {
   color: #fff;
+  background-color: #56AFFC;
+  border-radius: 5px;
 }
 
 .dropotron.level-0 {
@@ -3558,6 +3576,11 @@ button.small,
 	#logo-contact-info {
 		display: none;
 	}
+
+  #logo-contact-info a {
+    font-size: 1.4em;
+  }
+
 
   /* Menu */
 
